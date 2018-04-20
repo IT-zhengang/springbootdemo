@@ -1,0 +1,4 @@
+#配置服务器项目端口以及项目名称
+server:
+  port: 9000
+  context-path: /alidemo

@@ -1,0 +1,20 @@
+spring:
+  profiles:
+      active: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/novel
+    username: root
+    password: root
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+mybatis:
+  mapper-locations: com/alibaba/dt/mapper/*Mapper.xml
+  type-aliases-package: com.alibaba.dt.entity
